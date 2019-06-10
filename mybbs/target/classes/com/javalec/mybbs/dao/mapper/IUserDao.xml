@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.javalec.mybbs.dao.IUserDao">
+    <select id="loginCheckGetName" resultType="String">
+    	SELECT userName FROM user 
+    	WHERE userId = #{param1} AND userPassword = #{param2}
+    </select>
+    
+    <insert id="sign_up" >
+    	INSERT INTO user 
+    	VALUES(#{param1},#{param2},#{param3},#{param4},#{param5})
+
+    </insert>
+    
+    <select id="idCheck" resultType="String">
+    	SELECT userId FROM user 
+    	WHERE userId= #{param1}
+    </select>
+    
+    <select id="viewUser" 
+    	resultType="com.javalec.mybbs.dto.UserDto">
+    	SELECT * FROM user 
+    	WHERE userId= #{param1}
+    </select>
+   
+</mapper>

@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+small {
+	margin-left: 3px;
+	font-weight: bold;
+	color: gray;
+}
+
+.uploadedList{
+	width: 100%;
+	height: 500px;
+	border: 2px solid blue;
+	overflow: scroll;
+}
+
+.uploadedList .box {
+	margin: 10px;
+	text-align:center;
+	display: block;
+	float: left;
+	width :200px;
+	height: 200px;
+	border: 1px solid #C8C8C8;
+}
+
+.uploadedList .box img{
+	margin : 10px auto ; 
+	display:block;
+	width :100px;
+	height: 100px;
+}
+
+.uploadedList .box a{
+	display:block;
+	width :200px;
+	height: 50px;
+}
+
+.uploadedList .box .inputDiv{
+	display:block;
+	width :200px;
+	height: 50px;
+}
+
+
+.uploadedList .box button,#cansel{
+	margin : 0 auto;
+	display:block;
+	width :50px;
+	height: 20px;
+	vertical-align: top;
+	border: 1px solid #C8C8C8;
+	border-radius: 10px;
+	
+	font-size: 10px;
+	color: white;
+	background-color: #007BFF;
+}
+
+

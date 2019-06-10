@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.javalec.mybbs.dao.IGbookDao">
+
+    <select id="gbookList" 
+    	resultType="com.javalec.mybbs.dto.GbookDto">
+    	SELECT * FROM gbook 
+    	ORDER BY bbsDate DESC 
+    </select>
+    
+    <insert id="gbookInsert">
+    	INSERT INTO gbook(userId,bbsDate,content) 
+    	VALUES( #{param1},now(),#{param2} )
+    </insert>
+   
+   	<delete id="gbookDelete">
+   		DELETE FROM gbook
+   		WHERE gbookId = #{param1}
+   	</delete>
+   
+</mapper>

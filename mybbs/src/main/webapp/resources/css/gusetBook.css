@@ -1,0 +1,125 @@
+@charset "UTF-8";
+h2{
+	text-align: center;
+}
+
+textarea{
+	display:block;
+	font-size: 20px;
+	width: 500px;
+	height: 100px;
+	margin: 10px auto;
+}
+#msgCount{
+	display: inline;
+}
+.data_count{
+	display:block;
+	font-size: 20px;
+	width: 500px;
+	height: 30px;
+	text-align: right;
+	margin: 10px auto;
+}
+
+#insert{
+	display:block;
+	width: 100px; 
+	font-size: 20px;
+	height: 40px;
+	color: white;
+	background-color: #007BFF;
+	border-radius: 10px;
+	margin: 10px auto;
+}
+
+
+.gbook{
+	display:block;
+	font-size: 20px;
+	width: 850px;
+	margin: 10px auto;
+	border:5px ridge  white;
+	padding: 40px;
+}
+
+.gbookBox {
+	display:block;
+	width: 850px;
+	height: 100px;
+	margin: 10px auto;
+}
+
+.id{
+	display:block;
+	float: left;
+	width: 100px;
+	height: 100px;
+	line-height : 100px;
+	text-align:center;
+	border:1px solid #000;
+	border-radius: 5px;
+	margin-right: 10px;
+}
+#content {
+	display:inline-block;
+	float: left;
+	width: 500px;
+	height: 100px;
+	border:1px solid #000;
+	border-radius: 5px;
+	margin-right: 10px;
+	line-height :100px;
+	text-align:center;
+}
+.content{
+	display:inline-block;
+	overflow:hidden;
+	float: left;
+	width: 500px;
+	height: 100px;
+	border:1px solid #000;
+	border-radius: 5px;
+	margin-right: 10px;
+	line-height: 33px;
+}
+pre {
+	white-space: pre-wrap;
+}
+
+.date{
+	display:inline-block;
+	overflow:hidden;
+	float: left;
+	width: 150px;
+	height: 100px;
+	margin-right: 10px;
+	line-height : 100px;
+	text-align:center;
+	border:1px solid #000;
+	border-radius: 5px;
+}
+
+.deleteBtn{
+	display:block;
+	float: left;
+	width: 50px;
+	height: 50px;
+	font-size: 20px;
+	color: white;
+	background-color: #007BFF;
+	border-radius: 10px;
+}
+
+#moreBtn{
+	display:block;
+	width: 75px;
+	height:30px;
+	margin:0 auto;
+	line-height: 30px;
+	text-align: center;
+	font-size: 16px;
+	color: white;
+	background-color: #007BFF;
+	border-radius: 10px;
+}

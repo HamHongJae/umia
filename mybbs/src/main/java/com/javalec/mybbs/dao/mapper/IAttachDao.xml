@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.javalec.mybbs.dao.IAttachDao">
+
+    <select id="attachList" 
+    	resultType="String">
+    	SELECT fullName FROM attach 
+    	WHERE userId = #{param1} AND location = #{param2}
+    	ORDER BY regDate 
+    </select>
+    
+    <insert id="attachInsert">
+    	INSERT INTO attach(fullName,userId,location,regDate) 
+    	VALUES( #{param1}, #{param2}, #{param3},now() )
+    </insert>
+   
+   	<delete id="attachDelete">
+   		DELETE FROM attach
+   		WHERE fullName = #{param1}
+   	</delete>
+   
+   	<delete id="locationDelete">
+   		DELETE FROM attach
+   		WHERE location like #{param1}
+   	</delete>
+   
+</mapper>
