@@ -139,19 +139,25 @@ public class HomeController {
 	}
 	
 	@RequestMapping("/sign_up.do")
-	public String sign_up_Action(HttpServletRequest request, Model model) {
+	public ModelAndView sign_up_Action(HttpServletRequest request, ModelAndView mav) {
 		
 		IUserDao dao = sqlSession.getMapper(IUserDao.class);
-		
+		try {
 			dao.sign_up(	
-			request.getParameter("userId"),
-			request.getParameter("userPassword"),
-			request.getParameter("userName"),
-			request.getParameter("userGender"),
-			request.getParameter("userEmail")
-				);
-		
-		return "main";
+					request.getParameter("userId"),
+					request.getParameter("userPassword"),
+					request.getParameter("userName"),
+					request.getParameter("userGender"),
+					request.getParameter("userEmail")
+						);
+					mav.addObject("msg", "가입완료");
+					mav.setViewName("main");
+		} catch (Exception e) {
+			mav.addObject("msg", "가입실패 : ID 중복검사 해주세요.");
+			mav.setViewName("main");
+
+		}
+		return mav;
 	}
 	
 	@RequestMapping("/idCheck")

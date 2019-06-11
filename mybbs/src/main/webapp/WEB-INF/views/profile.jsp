@@ -10,8 +10,8 @@
 <body>
 	<%@ include file="menu.jsp"  %>
 	<h2>프로필</h2>
-		<div class="box">
-		<div><span>Id</span> ${dto.userId } </div>
+	<div class="box">
+		<div><span>ID</span> ${dto.userId } </div>
 		<div><span>Name</span>  ${dto.userName } </div>
 		<div><span>Gender</span>    ${dto.userGender } </div>
 		<div><span>Email</span> ${dto.userEmail } </div>

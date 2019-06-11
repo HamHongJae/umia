@@ -103,9 +103,7 @@ public class AjaxUploadController {
 			} else {
 				fileName = fileName.substring(fileName.indexOf("_")+1);
 				headers.setContentType(MediaType.APPLICATION_OCTET_STREAM);
-				
-				//파일이름 한글이 있는경우
-				fileName = new String(fileName.getBytes("utf-8"),"iso-8859-1");
+				fileName = new String(fileName.getBytes("utf-8"),"iso-8859-1"); //파일이름 한글이 있는경우
 				headers.add("Content-Disposition","attachment; filename=\""+fileName+"\"");
 			}
 			entity = new ResponseEntity<byte[]>(IOUtils.toByteArray(in),headers, HttpStatus.OK);

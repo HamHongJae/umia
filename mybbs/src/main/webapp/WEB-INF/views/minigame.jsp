@@ -102,7 +102,7 @@
  		 }
  		 else
  		 {
- 		  alert("No Array Object");
+ 		  	alert("No Array Object");
  		 }
  		 return arr;
  	}
@@ -148,7 +148,6 @@
 		} 
 			
 		if(select1 == select2){ //선택된 두 카드가 같은 그림일때
-			//두 카드의 상태 정보를 매치됨으로 설정
 			console.log('same');
 			sucesses++;
 			console.log('sucesses : ' + sucesses);
@@ -191,7 +190,7 @@
 			}, 500);
 		}
 
-	}//매치 체크
+	}//checkMatch()
 	
 </script>
 	

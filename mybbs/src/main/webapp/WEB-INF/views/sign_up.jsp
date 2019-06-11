@@ -26,8 +26,8 @@
 		</div>
 		<div>
 			<label>성별</label>
-			<input type="radio" name="userGender" checked="checked" /> 남 
-			<input type="radio" name="userGender" /> 여	 
+			<input type="radio" name="userGender" checked="checked" value="남성" /> 남 
+			<input type="radio" name="userGender" value="여성" /> 여	 
 		</div>
 		<div>	
 			<label>이메일</label><input type="text" name="userEmail" />
